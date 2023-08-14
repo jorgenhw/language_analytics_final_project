@@ -65,7 +65,11 @@ Run the code below in your bash terminal:
 bash setup.sh
 ```
 
+## The internals of the scripts
+Fill out this (should touch upon the use of gpt-3 and textdescriptives)
+
 ## Your options in the script
+
 Once you run ```setup.sh``` the remainder of the script is controlled via the command line.
 
 When prompted, the user can select whether to work with an article from The Guardian of his/her own choice, or to work with the latest The Guardian Briefing.
@@ -104,5 +108,14 @@ This repository has the following structure:
 
 <!-- RESULTS -->
 ## Remarks on findings
+Throughout the course of this project, several insights were gleaned from the application of various natural language processing techniques to news articles. The implemented text summarization method, powered by GPT-3, effectively condensed lengthy articles into concise summaries, making it an ideal tool for quickly grasping the core content of an article. The tone adjustment feature, which also utilizes GPT-3 to rephrase text in a simplified manner, proved useful for enhancing readability and catering to a wider audience. Furthermore, the readability analysis provided valuable insights into the complexity of the articles, enabling users to gauge their suitability for different readerships. The add-on option to get the article as an audio file speaks into a (growing tendency)[https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2022/young-audiences-news-media] for especially young people to listen to news instead of reading them. There are far better text-to-speech software to do this than the one used in this project and certainly more news agencies would benefit from looking into this. Very recently (Suno)[https://www.suno.ai/ released (Bark)[https://github.com/suno-ai/bark] which sounds identical to a human being. And it's open source.
+
+The combination of these techniques offers a versatile toolkit for processing news articles, making them more accessible and informative. It also underscores the potential of AI-driven solutions in enhancing content consumption experiences, enabling individuals to consume news articles tailored to their preferences and comprehension levels.
+
 
 ## Conclusion
+In conclusion, this project demonstrates the seamless integration of different natural language processing techniques into a unified framework for news article processing. By utilizing tools like GPT-3 and TextDescriptives, the script offers users the ability personalize how they recieve news to their liking.
+
+This project not only showcases the capabilities of the applied techniques but also highlights the potential of AI-powered solutions in revolutionizing the way we interact with textual content. As a final project for the Cultural Data Science course, this endeavor serves as a testament to the intersection of technology and language analytics, paving the way for further exploration and innovation in the field.
+
+However, there are also a number of things to be aware of when using AI-powered tools to alter existing news. For instance, there is no one checking if the 'main points' version of an article is actually capturing the essence of that article or if ELI5 is correctly explaining the content. Therefore we are running the risk of actually turning real news into fake news by altering them. This is why we should be extremely careful when using e.g. GPT-3 or GPT-4 to alter text in general. 
