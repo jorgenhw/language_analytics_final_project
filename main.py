@@ -1,13 +1,16 @@
-from src.functions import ask_for_url, set_api_key, get_article_text, options, audio_or_text
+from src.functions import process_user_choice, set_api_key, get_article_text, options, audio_or_text
+from src.classes import bcolors
 
 def main():
-    print("Welcome to the Guardian article podcast service! Before listening to the article, you can choose to either shorten it, change the tone, get the main points, or keep the full length. Furthermore, you have the option get a readbility score or main topics as text outputs.")
+    print("#############################################")
+    print("#############################################")
+    print(f'{bcolors.HEADER}Welcome to the Guardian article program! Here you can process articles in different ways before either reading or listening to them.{bcolors.ENDC}')
 
     # Get the API's response
     set_api_key()
 
     # Get a link to the article of interest
-    url = ask_for_url()
+    url = process_user_choice()
 
     # Get the article text
     article_text = get_article_text(url)
