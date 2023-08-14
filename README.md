@@ -15,7 +15,7 @@
 ## About the project
 This project is the final part of the portfolios for language analytics exam project.
 
-The project aims to show how different natural language processing tools can function together in a simple and useful way. To showcase this we've developed a program that takes any article from [The Guardian](https://www.theguardian.com/international) as input and prompts the user with different ways to preprocess the article. Some of these methods are  text summarization, readability analysis and tone adjustment. Once preprocessed, the user can further on decide whether he/she wants to convert the text to audio using a text-to-speech software, print the text in the console or save it to drive as a .txt file. The script uses Python and several external libraries to achieve its functionality.
+The project aims to show how different natural language processing tools can function together in a simple and useful way. To showcase this we've developed a program that takes any article from [The Guardian](https://www.theguardian.com/international) as input (scraped using [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)) and prompts the user with different ways to preprocess the article. Some of these methods are  text summarization, readability analysis and tone adjustment. Once preprocessed, the user can further on decide whether he/she wants to convert the text to audio using a text-to-speech software, print the text in the console or save it to drive as a .txt file. The script uses Python and several external libraries to achieve its functionality.
 
 <!-- USAGE -->
 ## Usage
@@ -64,9 +64,6 @@ Run the code below in your bash terminal:
 ```bash
 bash setup.sh
 ```
-
-## The internals of the scripts
-Fill out this (should touch upon the use of gpt-3 and textdescriptives)
 
 ## Your options in the script
 
